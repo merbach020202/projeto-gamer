@@ -1,0 +1,599 @@
+@font-face {
+    font-family: Inter;
+    src: url(../assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+@font-face {
+    font-family: Titiliumweb-black;
+    src: url(../assets/fonts/TitiliumWeb/TitilliumWeb-Black.ttf);
+}
+
+@font-face {
+    font-family: Titiliumweb-bold;
+    src: url(../assets/fonts/Titilium-web/TitilliumWeb-Bold.ttf);
+}
+
+@font-face {
+    font-family: Quicksand;
+    src: url(../assets/fonts/Quicksand/Quicksand-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #ffffff;
+}
+
+/* Classes genéricas */
+.mostrar-menu {
+    left: 0 !important;
+}
+
+.mostrar-menu1 {
+    right: 0 !important;
+
+}
+
+
+.layout-grid {
+    /* border: 1px solid salmon; */
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+
+/* justify content + align items */
+.alinhamento-between-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Mobile First */
+
+/* HEADER */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    width: 100vw;
+    height: 60px;
+    background-color: #1B1426;
+}
+
+/* Header Top */
+header .header-top {
+    display: none;
+}
+
+/* Header Bottom */
+
+
+header .header-bottom {
+    height: 100%;
+}
+
+header .header-bottom img.logo {
+    width: 86px;
+}
+
+header .header-bottom nav {
+    position: fixed;
+    top: 60px;
+    left: -80vw;
+    width: 80vw;
+    height: calc(100vh - 60px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    background-image: linear-gradient(to right Bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
+    backdrop-filter: blur(45px);
+
+    transition: left 0.5s;
+}
+
+/******** SOMENTE LINKS "FILHOS DIRETOS" ********/
+header .header-bottom nav>a {
+    padding: 30px 0;
+    color: white;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    border-bottom: 2px solid #F9AA01;
+}
+
+header .header-bottom nav>a:hover {
+    background-color: transparent;
+    color: #F9AA01;
+}
+
+header .header-bottom nav>a:last-of-type {
+    border-bottom: none;
+}
+
+/* Icone de midias sociais possibilidade position*/
+/* header .header-bottom nav .midias-sociais {
+    position: absolute;
+    bottom: 10px;
+    left: calc(50% - 100px);
+    width: 200px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+
+header .header-bottom nav .midias-sociais {
+    display: flex;
+    justify-content: center;
+    /* gap e o espacamento entre os elementos, funciona em linha e tambem em coluna  */
+    gap: 50px;
+}
+
+/* MENU LATERAL DIREITO - ICONES */
+
+header .header-bottom .menu-usuarios {
+    position: fixed;
+    top: 60px;
+    right: -20vw;
+    width: 19vw;
+    height: 150px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* ou gap: 20px */
+    align-items: center;
+    background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
+    backdrop-filter: blur(45px);
+
+    transition: right 0.6s;
+
+}
+
+/* MAIN */
+main {
+    margin-top: 60px;
+}
+
+/* BANNER */
+
+.banner {
+    width: 100%;
+    height: 606px;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rebeccapurple;
+    background-image: url(../assets/images/Imagem-banner-mobile.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.banner h1 {
+    font-family: Titiliumweb-black;
+    font-size: 40px;
+    text-shadow: 0 0 7px #FD4255;
+}
+
+.banner .botao-sobre {
+    width: 171px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F9AA01;
+    color: #1B1426;
+    font-family: Titiliumweb-bold;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+/* SESSÃO JOGOS */
+main .Destaque {
+    width: 375px;
+    height: 590px;
+    background-color: #1B1426;
+}
+
+main .Destaque {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+main .Destaque > img {
+    width: 335px;
+    height: 189px;
+}
+
+/* FOOTER */
+footer {
+    padding-top: 60px;
+    padding-bottom: 30px;
+    box-shadow: inset 0 30px 60px rgba(0, 0, 0, 1);
+    background-image: url(../assets/images/backgroung_footer.svg);
+    background-position: top;
+    background-size: contain;
+}
+
+footer #sobre {
+    width: 100%;
+    height: 304px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-color: rgba(250, 128, 114, .3);
+}
+
+footer #sobre>img {
+    width: 110px;
+}
+
+footer #sobre p {
+    font-family: Quicksand;
+    font-size: 14px;
+    font-weight: 400px;
+}
+
+footer #midias-sociais-footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+/* AQUI FICA A RESPONSIVIDADE *********************************************************************************/
+
+/* TABLETS */
+@media screen and (min-width:768px) {}
+
+/* DESKTOPS >= 1200px */
+
+@media screen and (min-width: 1200px) {
+
+    .layout-grid {
+        width: 100%;
+        max-width: 1200px;
+        /* border: 3px dotted yellowgreen; */
+    }
+
+    /* HEADER */
+    header {
+        position: static;
+        height: 140px;
+    }
+
+    /* HEADER-TOP */
+    header .header-top {
+        display: block;
+        /* BLOCK É O VALOR DEFAULT DA MAIORIA DOS ELEMENTOS */
+        height: 50px;
+        border-bottom: 1px solid orange;
+    }
+
+    header .header-top .contatos {
+        width: 415px;
+        display: flex;
+        justify-content: space-between;
+
+        font-size: 14px;
+        font-family: Inter;
+        font-weight: 400px;
+    }
+
+    header .header-top .contatos>div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        /* border: 1px solid yellow; */
+    }
+
+    header .header-top .midias-sociais {
+        width: 120px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    /* ESCONDE ELEMENTOS DESNECESSARIOS */
+    header .menu-hamburguer,
+    header .menu-pontinhos,
+    header .header-bottom nav .phone,
+    header .header-bottom nav .email,
+    header .header-bottom nav .midias-sociais {
+        display: none;
+    }
+
+    /* HEADER BOTTOM */
+    header .header-bottom {
+        height: 90px;
+    }
+
+    header .header-bottom img.logo {
+        width: 200px;
+    }
+
+    header .header-bottom nav {
+        position: static;
+        width: 440px;
+        height: 50px;
+        padding: 0;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    header .header-bottom nav>a {
+        border: none;
+        font-size: 14px;
+    }
+
+    header .header-bottom .menu-usuarios {
+        position: static;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 120px;
+        height: auto;
+        background-color: transparent;
+    }
+
+
+
+    /* MAIN */
+    main {
+        margin-top: 0;
+    }
+
+    /* BANNER */
+    .banner {
+        height: 722px;
+        background-image: url(../assets/images/Banner_background_1.svg);
+        background-size: cover;
+        background-position: top;
+
+    }
+
+    .banner h1 {
+        font-size: 80px;
+    }
+
+    /********** SESSÃO JOGOS *********/
+    main .jogos-background {
+        background-color: #1B1426;
+        height: 500px;
+        width: 100%;
+    }
+
+    main .jogos-background .jogos-flex {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+        padding-top: 90px;
+    }
+
+    main .jogos-background .jogos-flex .img {
+        width: 556px;
+        height: 513px;
+
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+}
+
+/*********** ENTRE PARA O TIME PROGRAMER ************/
+
+
+main .time-programer {
+    width: 375px;
+    height: 1520px;
+    background-color: #F9AA01;
+}
+
+/* FONTES */
+
+main .time-programer h1 {
+    font-family: Titiliumweb-black;
+    font-size: 17px;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+
+    display: flex;
+    justify-content: center;
+    padding-top: 90px;
+}
+
+main .time-programer hr {
+    width: 200px;
+    height: 1.5px;
+    margin-left: 90px;
+    margin-top: 35px;
+    border-width: 1px;
+    background-color: black;
+    color: black;
+    border-width: 0;
+}
+
+/* ARTICLES */
+
+main .jogos-diferentes {
+    margin-top: 95px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+main .quadrado1 {
+    width: 231px;
+    height: 300px;
+    background: linear-gradient(145.9deg, rgba(110, 49, 236, 0.2), rgba(45, 7, 109, 0.83));
+    backdrop-filter: blur(7.5px);
+    border-radius: 8px;
+
+    position: absolute;
+    margin-top: -380px;
+    right: 20px;
+}
+
+main .quadrado1 img {
+    display: flex;
+    padding: 25px 60px 20px 70px;
+}
+
+main .quadrado1 h3 {
+    font-family: Titiliumweb-black;
+    font-size: 18px;
+    font-weight: 900px;
+    text-transform: uppercase;
+    text-shadow: 0 0 6px #C6A5E6;
+
+    padding: 0 10px 5px 25px;
+}
+
+main .quadrado1 p {
+    font-family: Quicksand;
+    font-size: 13px;
+    font-weight: 400px;
+    text-align: justify;
+    padding: 15px 25px 0 25px;
+}
+
+main .professores {
+    position: absolute;
+    margin-top: 140px;
+    margin-left: 30px;
+}
+
+main .quadrado2 {
+    width: 231px;
+    height: 300px;
+    background: linear-gradient(145.9deg, rgba(110, 49, 236, 0.2), rgba(45, 7, 109, 0.83));
+    backdrop-filter: blur(7.5px);
+    border-radius: 8px;
+
+    position: relative;
+    top: -320px;
+    left: -10px;
+}
+
+main .quadrado2 img {
+    display: flex;
+    padding: 25px 60px 5px 70px;
+}
+
+main .quadrado2 h3 {
+    font-family: Titiliumweb-black;
+    font-size: 18px;
+    font-weight: 900px;
+    text-transform: uppercase;
+    text-shadow: 0 0 6px #C6A5E6;
+
+    padding: 0 5px 0 45px;
+}
+
+main .quadrado2 p {
+    font-family: Quicksand;
+    font-size: 13px;
+    font-weight: 400px;
+    text-align: justify;
+    padding: 15px 35px 0 35px;
+}
+
+/************ NOTÍCIA **************/
+
+main .noticia-background {
+    width: 375px;
+    height: 3675px;
+    background: linear-gradient(119.63deg, rgba(45, 24, 77, 0) 0%, rgba(27, 20, 38, 0.55) 99.45%);
+    backdrop-filter: blur(4px);
+    background-image: url(../assets/images/IMAGEM\ FUNDO.svg);
+}
+
+main .titulo h4 {
+    font-family: Titiliumweb-black;
+    font-size: 18px;
+    text-transform: uppercase;
+
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+main .titulo hr {
+    width: 53%;
+    height: 2px;
+    background-color: #F9AA01;
+    border-width: 0;
+    margin-left: 80px;
+    margin-top: 50px;
+}
+
+
+
+/********* NOTICIAS ARTICLES **********/
+
+main .noticia-box article {
+    height: 387px;
+    width: 335px;
+    background: linear-gradient(141.58deg, rgba(37, 26, 52, 0.34) 0%, rgba(5, 1, 12, 0.79) 98.48%);
+    backdrop-filter: blur(3px);
+    border-radius: 8px;
+
+    margin-top: 40px;
+}
+
+
+main .noticia-box img {
+    border-radius: 8px;
+}
+
+main .noticia-box h5 {
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 700;
+
+    display: flex;
+    margin-left: 20px;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+main .noticia-box p {
+    text-align: justify;
+    padding: 20px 20px 20px 20px;
+    font-family: Quicksand;
+    font-weight: 400px;
+}
+
+main .noticia-box {
+    height: 387px;
+    width: 335px;
+    background: linear-gradient(141.58deg, rgba(37, 26, 52, 0.34) 0%, rgba(5, 1, 12, 0.79) 98.48%);
+    backdrop-filter: blur(3px);
+    border-radius: 8px;
+
+    position: absolute;
+    left: 18px;
+    top: 230px;
+}

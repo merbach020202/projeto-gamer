@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Gamer Manhã</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <!-- LINHA DE CIMA COM A BORDA AMARELA -->
+        <div class="header-top">
+            <div class="layout-grid alinhamento-between-center">
+                <div class="contatos">
+                    <div class="phone">
+                        <img src="assets/Icons/Desktop/icone_telefone.svg" alt="Ícone de telefone">
+                        <span>(11) 0900-1010</span>
+                    </div>
+                    <div class="email">
+                        <img src="assets/Icons/Desktop/icone_email.svg" alt="Ícone de e-mail">
+                        <span>contato@gamer.com.br</span>
+                    </div>
+                </div>
+
+                <div class="midias-sociais">
+                    <a href="">
+                        <img src="assets/Icons/Desktop/facebook.svg" alt="Imagem link do Facebook da empresa Gamer">
+                    </a>
+                    <a href="">
+                        <img src="assets/Icons/Desktop/linkedin.svg" alt="Imagem link do Linkedin da empresa Gamer">
+                    </a>
+                    <a href="">
+                        <img src="assets/Icons/Desktop/Instagram.svg" alt="Imagem link do Instagram da empresa Gamer">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-bottom">
+            <div class="layout-grid alinhamento-between-center">
+                <!-- MENU HAMBURGUER -->
+                <img onclick="mostrarMenu()" src="assets/Icons/Mobile/3 barras.svg" class="menu-hamburger"
+                    alt="Ícone para abrir e fechar o menu de celular">
+
+                <img class="logo" src="assets/images/logotipo-gamer.svg"
+                    alt="Logotipo da empresa. Texto Gamer com um joystick ao centro">
+
+                <nav class="menu" id="menu">
+                    <a href="">Início</a>
+                    <a href="">Jogadores</a>
+                    <a href="">Equipes</a>
+                    <a href="">Notícias</a>
+
+                    <!-- VISIVEL APENAS NO MOBILE -->
+
+                    <a class="phone">
+                        <img src="assets/Icons/Desktop/icone_telefone.svg" alt="Ícone de telefone">
+                        <span>(11) 0900-1010</span>
+                    </a>
+                    <a class="email">
+                        <img src="assets/Icons/Desktop/icone_email.svg" alt="Ícone de e-mail">
+                        <span>contato@gamer.com.br</span>
+                    </a>
+
+                    <div class="midias-sociais">
+                        <a href="">
+                            <img src="assets/Icons/Desktop/facebook.svg" alt="Imagem link do Facebook da empresa Gamer">
+                        </a>
+                        <a href="">
+                            <img src="assets/Icons/Desktop/linkedin.svg" alt="Imagem link do Linkedin da empresa Gamer">
+                        </a>
+                        <a href="">
+                            <img src="assets/Icons/Desktop/Instagram.svg"
+                                alt="Imagem link do Instagram da empresa Gamer">
+                        </a>
+                    </div>
+                </nav>
+
+                <!-- MENU 3 PONTINHOS -->
+                <img onclick="mostrarUsuarios()" src="assets/Icons/Mobile/3 pontos.svg" class="menu-pontinhos"
+                    alt="Ícone 3 pontinhos, abre o menu de usuários">
+
+                <div class="menu-usuarios" id="menu-usuarios">
+                    <a href="">
+                        <img src="assets/Icons/Mobile/Usuário.svg" alt="Ícone de perfil">
+                    </a>
+                    <a href="">
+                        <img src="assets/Icons/Mobile/Sacola.svg" alt="Ícone de sacola">
+                    </a>
+                    <a href="">
+                        <img src="assets/Icons/Mobile/Lupa.svg" alt="Ícone lupa de pesquisa">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="banner">
+            <h1>Liga Gamers</h1>
+            <a href="" class="botao-sobre">Sobre</a href="">
+            </div>
+        </section>
+        <!------------- SESSÃO JOGOS -------------->
+        <section class="Destaque">
+            <img src="assets/images/Imagem fifa.svg" alt="imagem do jogo fifa 2023">
+
+            <img src="assets/images/Imagem cs-go.svg" alt="imagem do counter-strike">
+        </section>
+        <!--------- AQUI COMECA O TIME PROGRAMER ---------->
+        <section class="time-programer">
+            <h1>entre para o time programer</h1>
+            <hr>
+
+            <article class="jogos-diferentes">
+                <img src="assets/images/kiljoy.svg" alt="imagem de perdonagem de jogo 1">
+                <div class="quadrado1">
+                    <img src="assets/Icons/Mobile/Joystick-gamer.svg" alt="">
+                    <h3>20 jogos diferentes</h3>
+                    <p>São mais de 20 jogos em 2 plataformas dispóniveis para que você possa aprender melhores
+                        técnicas.</p>
+                </div>
+            </article>
+
+            <article class="professores">
+                <img src="assets/images/lp-gamer-home_0000s_0000s_0002_lol.svg" alt="imagem de personagem de jogo 2">
+                <div class="quadrado2">
+                    <img src="assets/Icons/Mobile/53 professores.svg" alt="">
+                    <h3>53 professores</h3>
+                    <p>Temos 53 Proplayers no nosso time para ensinar todas as es- tratégias, você vai aprender do
+                        básico ao avançado.
+                        Tempo de treinamento, des- canso, equipamentos. </p>
+                </div>
+            </article>
+        </section>
+        <!-- AQUI COMECA AS NOTICIAS --------->
+
+        <section class="noticia-background">
+            <div class="titulo">
+                <h4>notícia</h4>
+                <hr>
+            </div>
+
+            <div class="noticia-box">
+                <article>
+                    <img src="assets/images/VCT-eSports 1.svg" alt="imagem noticia 1">
+                    <h5>Titulo da Notícia</h5>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores eum dolore nemo
+                        consectetur
+                        explicabo, provident qui, autem, debitis officia placeat suscipit saepe minus rem atque?
+                    </p>
+                </article>
+
+                <article>
+                    <img src="assets/images/VCT-eSports 2.svg" alt="imagem noticia 2">
+                    <h5>Titulo da Notícia</h5>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores eum dolore nemo
+                        consectetur
+                        explicabo, provident qui, autem, debitis officia placeat suscipit saepe minus rem atque?
+                    </p>
+                </article>
+
+                <article>
+                    <img src="assets/images/VCT-eSports 3.svg" alt="imagem noticia 3">
+                    <h5>Titulo da Notícia</h5>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores eum dolore nemo
+                        consectetur
+                        explicabo, provident qui, autem, debitis officia placeat suscipit saepe minus rem atque?
+                    </p>
+                </article>
+
+                <article>
+                    <img src="assets/images/VCT-eSports 4.svg" alt="imagem noticia 4">
+                    <h5>Titulo da Notícia</h5>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores eum dolore nemo
+                        consectetur
+                        explicabo, provident qui, autem, debitis officia placeat suscipit saepe minus rem atque?
+                    </p>
+                </article>
+
+                <article>
+                    <img src="assets/images/VCT-eSports 1.svg" alt="imagem noticia 1">
+                    <h5>Titulo da Notícia</h5>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores eum dolore nemo
+                        consectetur
+                        explicabo, provident qui, autem, debitis officia placeat suscipit saepe minus rem atque?
+                    </p>
+                </article>
+
+                <article>
+                    <img src="assets/images/VCT-eSports 2.svg" alt="imagem noticia 2">
+                    <h5>Titulo da Notícia</h5>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores eum dolore nemo
+                        consectetur
+                        explicabo, provident qui, autem, debitis officia placeat suscipit saepe minus rem atque?
+                    </p>
+                </article>
+
+                <article>
+                    <img src="assets/images/VCT-eSports 3.svg" alt="imagem noticia 3">
+                    <h5>Titulo da Notícia</h5>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores eum dolore nemo
+                        consectetur
+                        explicabo, provident qui, autem, debitis officia placeat suscipit saepe minus rem atque?
+                    </p>
+                </article>
+
+                <article>
+                    <img src="assets/images/VCT-eSports 4.svg" alt="imagem noticia 4">
+                    <h5>Titulo da Notícia</h5>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores eum dolore nemo
+                        consectetur
+                        explicabo, provident qui, autem, debitis officia placeat suscipit saepe minus rem atque?
+                    </p>
+                </article>
+            </div>
+
+        </section>
+
+
+    </main>
+
+    <!-- FOOTER -------->
+
+    <footer>
+        <div class="layout-grid footer-top">
+            <div id="sobre">
+                <img src="" alt="">
+                <p>Nosso sucesso na criação de soluções de negócios se deve em grande parte à nossa equipe talentosa e
+                    altamente talentosa e comprometida.</p>
+
+                <div id="midias-sociais-footer">
+                    <a href=""></a>
+                    <img src="assets/Icons/Mobile/icone_facebook_footer.svg" alt="Icone do facebook">
+                    <a href=""></a>
+                    <img src="assets/Icons/Mobile/icone_linkedin_footer.svg" alt="Icone do Linkedin">
+                    <a href=""></a>
+                    <img src="assets/Icons/Mobile/icone_intagram_footer.svg" alt="Icone do Instagram">
+                </div>
+            </div>
+
+            <div id="Contatos">
+                <div class="titulos-uteis">
+                    <h3>Contatos</h3>
+                    <hr>
+                </div>
+
+                <p>
+                    <span class="contatos-titulo">localizacao:</span>
+                    Rua Niteroi, 180 - Sao Caetano do Sul - SP
+                </p>
+                <p>
+                    <span class="contatos-titulo">junte-se a nos:</span>
+                    contato@gamer.com.br
+                </p>
+                <p>
+                    <span class="Links-Uteis">Telefone:</span>
+                    (11) 0900-1010
+                </p>
+
+                <div class="contatos-titulo">Telefone</span>
+                    <div class="Titulos-footer"></div>
+                </div>
+            </div>
+
+            <ul class="menu-footer">
+                <li>
+                    <a href="">Inicio</a>
+                </li>
+                <li>
+                    <a href="">Links Uteis</a>
+                </li>
+                <li>
+                    <a href="">Contatos</a>
+                </li>
+            </ul>
+
+        </div>
+
+
+
+
+        <div id="newsletter">
+            <div class="titulos-footer">
+                <h3>Contatos</h3>
+                <hr>
+            </div>
+
+            <form action="" class="frm-news">
+                <input type="email" placeholder="Digite seu e-mail">
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        </div>
+        <!-------- FIM DA FOOTER TOP  -------->
+
+
+        <div class="layout-grid footer-bottom">
+            <p id="rights">Todos os direitos reservados</p>
+        </div>
+
+        <img src="assets/Icons/Mobile/Botao_voltar_ao_topo.svg"
+            alt="Icone com a seta para cima, clique para voltar ao topo">
+
+    </footer>
+
+
+    <script>
+        function mostrarMenu() {
+            document.getElementById("menu").classList.toggle("mostrar-menu");
+        }
+
+        function mostrarUsuarios() {
+            document.getElementById("menu-usuarios").classList.toggle("mostrar-menu1");
+        }
+    </script>
+
+</body>
+
+</html>
