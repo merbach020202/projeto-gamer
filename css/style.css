@@ -1,22 +1,34 @@
+/* imports das fontes */
+
+/* TITILLIUM WEB */
+@font-face {
+    font-family: TitilliumWeb-Black;
+    src: url(../assets/fonts/TitiliumWeb/TitilliumWeb-Black.ttf);
+}
+
+@font-face {
+    font-family: TitilliumWeb-Bold;
+    src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Bold.ttf);
+}
+
+@font-face {
+    font-family: TitiliumWeb-Regular;
+    src: url(../assets/fonts/TitiliumWeb/TitilliumWeb-Regular.ttf);
+}
+
+/******* INTER *******/
 @font-face {
     font-family: Inter;
     src: url(../assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
 }
 
-@font-face {
-    font-family: Titiliumweb-black;
-    src: url(../assets/fonts/TitiliumWeb/TitilliumWeb-Black.ttf);
-}
-
-@font-face {
-    font-family: Titiliumweb-bold;
-    src: url(../assets/fonts/Titilium-web/TitilliumWeb-Bold.ttf);
-}
-
+/******* QUICKSAND *******/
 @font-face {
     font-family: Quicksand;
     src: url(../assets/fonts/Quicksand/Quicksand-VariableFont_wght.ttf);
 }
+
+
 
 * {
     margin: 0;
@@ -33,11 +45,9 @@ body {
     left: 0 !important;
 }
 
-.mostrar-menu1 {
+.mostrar-usuarios {
     right: 0 !important;
-
 }
-
 
 .layout-grid {
     /* border: 1px solid salmon; */
@@ -45,7 +55,6 @@ body {
     height: 100%;
     margin: 0 auto;
 }
-
 
 /* justify content + align items */
 .alinhamento-between-center {
@@ -94,13 +103,13 @@ header .header-bottom nav {
     flex-direction: column;
     justify-content: space-between;
     padding-bottom: 20px;
-    background-image: linear-gradient(to right Bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
+    background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
     backdrop-filter: blur(45px);
 
-    transition: left 0.5s;
+    transition: left 0.4s;
 }
 
-/******** SOMENTE LINKS "FILHOS DIRETOS" ********/
+/* somente links "filhos diretos" */
 header .header-bottom nav>a {
     padding: 30px 0;
     color: white;
@@ -113,52 +122,52 @@ header .header-bottom nav>a {
 }
 
 header .header-bottom nav>a:hover {
-    background-color: transparent;
-    color: #F9AA01;
+    background-color: #F9AA01;
+
 }
 
 header .header-bottom nav>a:last-of-type {
     border-bottom: none;
 }
 
-/* Icone de midias sociais possibilidade position*/
-/* header .header-bottom nav .midias-sociais {
+/* ícone de mídias sociais possibilidade position 
+header .header-bottom nav .midias-sociais {
     position: absolute;
-    bottom: 10px;
+    bottom: 20px;
     left: calc(50% - 100px);
+    border: 1px solid red;
     width: 200px;
     height: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-} */
+}
+*/
 
 header .header-bottom nav .midias-sociais {
+    /* border: 1px solid red; */
     display: flex;
     justify-content: center;
-    /* gap e o espacamento entre os elementos, funciona em linha e tambem em coluna  */
+    /* gap é o espaçamento entre os elementos, funciona em linha e também em coluna. */
     gap: 50px;
 }
 
-/* MENU LATERAL DIREITO - ICONES */
-
+/* menu lateral direito - ícones */
 header .header-bottom .menu-usuarios {
     position: fixed;
     top: 60px;
-    right: -20vw;
+    right: -19vw;
     width: 19vw;
-    height: 150px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    /* ou gap: 20px */
-    align-items: center;
+    height: 170px;
     background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
     backdrop-filter: blur(45px);
 
-    transition: right 0.6s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 
+    transition: right 0.4s;
 }
 
 /* MAIN */
@@ -166,27 +175,29 @@ main {
     margin-top: 60px;
 }
 
-/* BANNER */
-
+/* Banner */
 .banner {
     width: 100%;
     height: 606px;
     padding: 40px 0;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+
     background-color: rebeccapurple;
-    background-image: url(../assets/images/Imagem-banner-mobile.svg);
+    background-image: url(../assets/images/banner-mobile.svg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
 }
 
 .banner h1 {
-    font-family: Titiliumweb-black;
+    font-family: TitilliumWeb-Black;
     font-size: 40px;
     text-shadow: 0 0 7px #FD4255;
+
 }
 
 .banner .botao-sobre {
@@ -197,33 +208,28 @@ main {
     align-items: center;
     background-color: #F9AA01;
     color: #1B1426;
-    font-family: Titiliumweb-bold;
-    font-size: 24px;
-    font-weight: bold;
-    border-radius: 8px;
     text-decoration: none;
+    font-family: TitilliumWeb-Bold;
+    font-size: 24px;
+    border-radius: 8px;
 }
 
-/* SESSÃO JOGOS */
-main .Destaque {
-    width: 375px;
+/* Sessão Jogos */
+main .jogos {
+    width: 100%;
     height: 590px;
     background-color: #1B1426;
 }
 
-main .Destaque {
+main .jogos .jogos-flex {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
     flex-direction: column;
+    justify-content: space-evenly;
+    /* vertical - column */
+    align-items: center;
 }
 
-main .Destaque > img {
-    width: 335px;
-    height: 189px;
-}
-
-/* FOOTER */
+/************** Footer **************/
 footer {
     padding-top: 60px;
     padding-bottom: 30px;
@@ -236,12 +242,11 @@ footer {
 footer #sobre {
     width: 100%;
     height: 304px;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-    background-color: rgba(250, 128, 114, .3);
+    align-items: center;
+    /* background-color: rgba(250, 128, 114, .3); */
 }
 
 footer #sobre>img {
@@ -250,44 +255,167 @@ footer #sobre>img {
 
 footer #sobre p {
     font-family: Quicksand;
+    font-weight: 400;
     font-size: 14px;
-    font-weight: 400px;
 }
 
 footer #midias-sociais-footer {
+    /* background-color: #FD4255; */
     width: 100%;
     display: flex;
-    justify-content: center;
-    gap: 25px;
+    justify-content: space-between;
 }
 
-/* AQUI FICA A RESPONSIVIDADE *********************************************************************************/
+/* CARACTERISTICAS GERAIS */
+footer .footer-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 1530px;
+}
 
-/* TABLETS */
-@media screen and (min-width:768px) {}
 
-/* DESKTOPS >= 1200px */
+footer .footer-top .titulos-footer h3 {
+    font-family: Titiliumweb-Black;
+    font-size: 30px;
+}
 
+footer .footer-top .titulos-footer hr {
+    border: 2px solid #F9AA01;
+    width: 112px;
+}
+
+/* LISTA UL */
+footer .footer-top .menu-footer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+/* ITEMS DA LISTA */
+footer .footer-top .menu-footer li {
+    list-style-type: none;
+    width: 110px;
+    margin-bottom: 20px;
+}
+
+footer .footer-top .menu-footer a {
+    color: white;
+    text-decoration: none;
+    font-family: Titiliumweb-Bold;
+    font-size: 16px;
+}
+
+footer .footer-top .menu-footer a::before {
+    content: "\2015";
+    margin-right: 10px;
+    color: #F9AA01;
+}
+
+footer .footer-top .titulos-footer ul {
+    color: white;
+    text-decoration: none;
+    font-family: Titiliumweb-Bold;
+    font-size: 16px;
+}
+
+/******** CONTATOS *********/
+
+footer .footer-top #contatos {
+    color: white;
+    text-decoration: none;
+    font-family: Titiliumweb-Bold;
+    font-size: 16px;
+}
+
+footer .footer-top #contatos p {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+
+footer .footer-top #contatos p span {
+    color: #F9AA01;
+}
+
+/********** NEWSLETTER ************/
+footer #newsletter input,
+footer #newsletter button {
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 8px;
+    
+}
+
+footer #newsletter input {
+    background-color: transparent;
+    background-image: linear-gradient(to right bottom, rgba(239, 239, 239, .6), rgba(239, 239, 239, .1));
+    backdrop-filter: blur(6px);
+    border: 1px solid white;
+    color: white;
+    padding: 5px 10px;
+    font-family: TitiliumWeb-Regular;
+    font-size: 16px;
+}
+
+footer #newsletter input::placeholder {
+    color: white;
+}
+
+footer #newsletter button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F9AA01;
+    font-family: TitiliumWeb-Bold;
+    font-size: 24px;
+    margin-bottom: 100px;
+}
+
+/************ FOOTER BOTTOM *************/
+
+footer .footer-bottom p {
+    font-family: TitiliumWeb-Regular;
+    font-size: 16px;
+
+    position: absolute;
+    left: 60px;
+    padding-top: 70px;
+}
+
+footer .footer-bottom img {
+    display: flex;
+    padding-left: 300px;
+    padding-bottom: 50px;
+}
+
+
+
+/* Tablets >= 768px*/
+@media screen and (min-width: 768px) {}
+
+/* Desktops >= 1200px*/
 @media screen and (min-width: 1200px) {
-
     .layout-grid {
         width: 100%;
         max-width: 1200px;
         /* border: 3px dotted yellowgreen; */
     }
 
-    /* HEADER */
+    /* HEADER  */
     header {
         position: static;
         height: 140px;
     }
 
-    /* HEADER-TOP */
+    /* Header Top */
     header .header-top {
+        /* block é o valor default da maioria dos elementos */
         display: block;
-        /* BLOCK É O VALOR DEFAULT DA MAIORIA DOS ELEMENTOS */
         height: 50px;
-        border-bottom: 1px solid orange;
+        border-bottom: 2px solid #F9AA01;
     }
 
     header .header-top .contatos {
@@ -295,9 +423,11 @@ footer #midias-sociais-footer {
         display: flex;
         justify-content: space-between;
 
-        font-size: 14px;
         font-family: Inter;
-        font-weight: 400px;
+        font-size: 14px;
+        font-weight: 400;
+
+        /* border: 2px solid white; */
     }
 
     header .header-top .contatos>div {
@@ -313,11 +443,11 @@ footer #midias-sociais-footer {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        /* border: 2px solid white; */
     }
 
-
-    /* ESCONDE ELEMENTOS DESNECESSARIOS */
-    header .menu-hamburguer,
+    /* Esconde elementos desnecessários */
+    header .menu-hamburger,
     header .menu-pontinhos,
     header .header-bottom nav .phone,
     header .header-bottom nav .email,
@@ -325,7 +455,7 @@ footer #midias-sociais-footer {
         display: none;
     }
 
-    /* HEADER BOTTOM */
+    /* Header Bottom */
     header .header-bottom {
         height: 90px;
     }
@@ -341,11 +471,17 @@ footer #midias-sociais-footer {
         padding: 0;
         flex-direction: row;
         align-items: center;
+        /* background-color: red; */
     }
 
     header .header-bottom nav>a {
         border: none;
         font-size: 14px;
+    }
+
+    header .header-bottom nav>a:hover {
+        background-color: transparent;
+        color: #F9AA01;
     }
 
     header .header-bottom .menu-usuarios {
@@ -357,243 +493,36 @@ footer #midias-sociais-footer {
         background-color: transparent;
     }
 
-
-
     /* MAIN */
     main {
         margin-top: 0;
     }
 
-    /* BANNER */
-    .banner {
+    /* Banner */
+    main .banner {
         height: 722px;
-        background-image: url(../assets/images/Banner_background_1.svg);
+        /* alterar a imagem de fundo */
+        background-image: url(../assets/images/Banner_background\ desktop.svg);
         background-size: cover;
         background-position: top;
 
     }
 
-    .banner h1 {
+    main .banner h1 {
         font-size: 80px;
     }
 
-    /********** SESSÃO JOGOS *********/
-    main .jogos-background {
-        background-color: #1B1426;
+    /* Sessão de Jogos */
+    main .jogos {
         height: 500px;
-        width: 100%;
     }
 
-    main .jogos-background .jogos-flex {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        flex-direction: row;
-        padding-top: 90px;
-    }
-
-    main .jogos-background .jogos-flex .img {
-        width: 556px;
-        height: 513px;
-
-        display: flex;
-        justify-content: space-around;
+    main .jogos .jogos-flex {
         flex-direction: row;
     }
-}
 
-/*********** ENTRE PARA O TIME PROGRAMER ************/
+    main .jogos .jogos-flex img {
+        width: 555px;
+    }
 
-
-main .time-programer {
-    width: 375px;
-    height: 1520px;
-    background-color: #F9AA01;
-}
-
-/* FONTES */
-
-main .time-programer h1 {
-    font-family: Titiliumweb-black;
-    font-size: 17px;
-    color: black;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-
-    display: flex;
-    justify-content: center;
-    padding-top: 90px;
-}
-
-main .time-programer hr {
-    width: 200px;
-    height: 1.5px;
-    margin-left: 90px;
-    margin-top: 35px;
-    border-width: 1px;
-    background-color: black;
-    color: black;
-    border-width: 0;
-}
-
-/* ARTICLES */
-
-main .jogos-diferentes {
-    margin-top: 95px;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-main .quadrado1 {
-    width: 231px;
-    height: 300px;
-    background: linear-gradient(145.9deg, rgba(110, 49, 236, 0.2), rgba(45, 7, 109, 0.83));
-    backdrop-filter: blur(7.5px);
-    border-radius: 8px;
-
-    position: absolute;
-    margin-top: -380px;
-    right: 20px;
-}
-
-main .quadrado1 img {
-    display: flex;
-    padding: 25px 60px 20px 70px;
-}
-
-main .quadrado1 h3 {
-    font-family: Titiliumweb-black;
-    font-size: 18px;
-    font-weight: 900px;
-    text-transform: uppercase;
-    text-shadow: 0 0 6px #C6A5E6;
-
-    padding: 0 10px 5px 25px;
-}
-
-main .quadrado1 p {
-    font-family: Quicksand;
-    font-size: 13px;
-    font-weight: 400px;
-    text-align: justify;
-    padding: 15px 25px 0 25px;
-}
-
-main .professores {
-    position: absolute;
-    margin-top: 140px;
-    margin-left: 30px;
-}
-
-main .quadrado2 {
-    width: 231px;
-    height: 300px;
-    background: linear-gradient(145.9deg, rgba(110, 49, 236, 0.2), rgba(45, 7, 109, 0.83));
-    backdrop-filter: blur(7.5px);
-    border-radius: 8px;
-
-    position: relative;
-    top: -320px;
-    left: -10px;
-}
-
-main .quadrado2 img {
-    display: flex;
-    padding: 25px 60px 5px 70px;
-}
-
-main .quadrado2 h3 {
-    font-family: Titiliumweb-black;
-    font-size: 18px;
-    font-weight: 900px;
-    text-transform: uppercase;
-    text-shadow: 0 0 6px #C6A5E6;
-
-    padding: 0 5px 0 45px;
-}
-
-main .quadrado2 p {
-    font-family: Quicksand;
-    font-size: 13px;
-    font-weight: 400px;
-    text-align: justify;
-    padding: 15px 35px 0 35px;
-}
-
-/************ NOTÍCIA **************/
-
-main .noticia-background {
-    width: 375px;
-    height: 3675px;
-    background: linear-gradient(119.63deg, rgba(45, 24, 77, 0) 0%, rgba(27, 20, 38, 0.55) 99.45%);
-    backdrop-filter: blur(4px);
-    background-image: url(../assets/images/IMAGEM\ FUNDO.svg);
-}
-
-main .titulo h4 {
-    font-family: Titiliumweb-black;
-    font-size: 18px;
-    text-transform: uppercase;
-
-    display: flex;
-    justify-content: center;
-    padding-top: 50px;
-}
-
-main .titulo hr {
-    width: 53%;
-    height: 2px;
-    background-color: #F9AA01;
-    border-width: 0;
-    margin-left: 80px;
-    margin-top: 50px;
-}
-
-
-
-/********* NOTICIAS ARTICLES **********/
-
-main .noticia-box article {
-    height: 387px;
-    width: 335px;
-    background: linear-gradient(141.58deg, rgba(37, 26, 52, 0.34) 0%, rgba(5, 1, 12, 0.79) 98.48%);
-    backdrop-filter: blur(3px);
-    border-radius: 8px;
-
-    margin-top: 40px;
-}
-
-
-main .noticia-box img {
-    border-radius: 8px;
-}
-
-main .noticia-box h5 {
-    font-family: Inter;
-    font-size: 24px;
-    font-weight: 700;
-
-    display: flex;
-    margin-left: 20px;
-    margin-top: 20px;
-    text-align: justify;
-}
-
-main .noticia-box p {
-    text-align: justify;
-    padding: 20px 20px 20px 20px;
-    font-family: Quicksand;
-    font-weight: 400px;
-}
-
-main .noticia-box {
-    height: 387px;
-    width: 335px;
-    background: linear-gradient(141.58deg, rgba(37, 26, 52, 0.34) 0%, rgba(5, 1, 12, 0.79) 98.48%);
-    backdrop-filter: blur(3px);
-    border-radius: 8px;
-
-    position: absolute;
-    left: 18px;
-    top: 230px;
 }
