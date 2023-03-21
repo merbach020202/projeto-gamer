@@ -1,0 +1,265 @@
+@font-face {
+    font-family: TitilliumWeb-Black;
+    src: url(../Login/assets/fonts/TitiliumWeb/TitilliumWeb-Black.ttf);
+}
+
+@font-face {
+    font-family: TitilliumWeb-Bold;
+    src: url(../Login/assets/fonts/TitiliumWeb/TitilliumWeb-Bold.ttf);
+}
+
+@font-face {
+    font-family: TitiliumWeb-Regular;
+    src: url(../Login/assets/fonts/TitiliumWeb/TitilliumWeb-Regular.ttf);
+}
+
+@font-face {
+    font-family: Quicksand;
+    src: url(../Login/assets/fonts/Quicksand/Quicksand-VariableFont_wght.ttf);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #ffffff;
+}
+
+/* Classes genéricas */
+.mostrar-menu {
+    left: 0 !important;
+}
+
+.mostrar-usuarios {
+    right: 0 !important;
+}
+
+.layout-grid {
+    /* border: 1px solid salmon; */
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+/* justify content + align items */
+.alinhamento-between-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Mobile First */
+
+/* HEADER */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    width: 100vw;
+    height: 60px;
+    background-color: #1B1426;
+}
+
+/* Header Top */
+header .header-top {
+    display: none;
+}
+
+/* Header Bottom */
+
+
+header .header-bottom {
+    height: 100%;
+}
+
+header .header-bottom img.logo {
+    width: 86px;
+}
+
+header .header-bottom nav {
+    position: fixed;
+    top: 60px;
+    left: -80vw;
+    width: 80vw;
+    height: calc(100vh - 60px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
+    backdrop-filter: blur(45px);
+
+    transition: left 0.4s;
+}
+
+/* somente links "filhos diretos" */
+header .header-bottom nav>a {
+    padding: 30px 0;
+    color: white;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    border-bottom: 2px solid #F9AA01;
+}
+
+header .header-bottom nav>a:hover {
+    background-color: #F9AA01;
+
+}
+
+header .header-bottom nav>a:last-of-type {
+    border-bottom: none;
+}
+
+/* ícone de mídias sociais possibilidade position 
+header .header-bottom nav .midias-sociais {
+    position: absolute;
+    bottom: 20px;
+    left: calc(50% - 100px);
+    border: 1px solid red;
+    width: 200px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+*/
+
+header .header-bottom nav .midias-sociais {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    /* gap é o espaçamento entre os elementos, funciona em linha e também em coluna. */
+    gap: 50px;
+}
+
+/* menu lateral direito - ícones */
+header .header-bottom .menu-usuarios {
+    position: fixed;
+    top: 60px;
+    right: -19vw;
+    width: 19vw;
+    height: 170px;
+    background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
+    backdrop-filter: blur(45px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    transition: right 0.4s;
+}
+
+/* MAIN */
+main {
+    margin-top: 60px;
+}
+
+
+/************ LOGIN ***********/
+.background-login {
+    height: 690px;
+    width: 685px;
+}
+
+.background-login::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    backdrop-filter: blur(4px);
+}
+
+/********** CAIXA COM BLUR *********/
+.box-login {
+    height: 460px;
+    width: 335px;
+    background: linear-gradient( to right bottom, rgba(27, 20, 38, 0.6), rgba(60, 3, 65, 0.4));
+    
+    position: absolute;
+    top: 50vw;
+    left: 5vw;
+}
+
+.box-login h1 {
+    font-family: TitilliumWeb-Black;
+    font-size: 28px;
+    color: white;
+    text-transform: uppercase;
+    
+    display: flex;
+    margin-top: 50px;
+    margin-left: 140px;
+    margin-right: 120px;
+    border-top: 3px solid #F9AA01;
+}
+
+/* CONTEUDO DENTRO DA CAIXA */
+
+
+.linha {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 10px;
+    width: 80%;
+    height: 40px;
+    background: linear-gradient( to right, rgba(217, 217, 217, 0.7), rgba(217, 217, 217, 0.2));
+    border-radius: 8px;
+    margin-top: 30px;
+    margin-left: 35px;
+    }
+
+
+
+
+.linha input {
+    width: 100%;
+    height: 35px;
+    outline: none;
+    border: none;
+    
+    font-family: TitiliumWeb-Regular;
+    font-size: 20px;
+    background: none;
+}
+
+::placeholder {
+    color: white;
+    padding-left: 10px;
+}
+
+.box-login button {
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 30px;
+    border-radius: 8px;
+
+    width: 80%;
+    height: 40px;
+    background-color: #F9AA01;
+
+    font-family: TitilliumWeb-Bold;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+
+
