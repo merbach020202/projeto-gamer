@@ -526,3 +526,201 @@ footer .footer-bottom img {
     }
 
 }
+
+/*********** ENTRE PARA O TIME PROGRAMER ************/
+
+
+main .time-programer {
+    width: 375px;
+    height: 1520px;
+    background-color: #F9AA01;
+}
+
+/* FONTES */
+
+main .time-programer h1 {
+    font-family: TitilliumWeb-Black;
+    font-size: 18px;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 900px;
+
+    display: flex;
+    justify-content: center;
+    padding-top: 90px;
+}
+
+main .time-programer hr {
+    width: 200px;
+    height: 1.5px;
+    margin-left: 90px;
+    margin-top: 35px;
+    border-width: 1px;
+    background-color: black;
+    color: black;
+    border-width: 0;
+}
+
+/* ARTICLES */
+
+main .jogos-diferentes {
+    margin-top: 95px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+main .quadrado1 {
+    width: 231px;
+    height: 300px;
+    background: linear-gradient(145.9deg, rgba(110, 49, 236, 0.2), rgba(45, 7, 109, 0.83));
+    backdrop-filter: blur(7.5px);
+    border-radius: 8px;
+
+    position: absolute;
+    margin-top: -380px;
+    right: 20px;
+}
+
+main .quadrado1 img {
+    display: flex;
+    padding: 25px 60px 20px 70px;
+}
+
+main .quadrado1 h3 {
+    font-family: Titiliumweb-black;
+    font-size: 18px;
+    font-weight: 900px;
+    text-transform: uppercase;
+    text-shadow: 0 0 8px #C6A5E6;
+
+    margin-left: 15px;
+}
+
+main .quadrado1 p {
+    font-family: Quicksand;
+    font-size: 13px;
+    font-weight: 400px;
+    text-align: justify;
+    padding: 15px 25px 0 25px;
+}
+
+main .professores {
+    position: absolute;
+    margin-top: 140px;
+    margin-left: 30px;
+}
+
+main .quadrado2 {
+    width: 231px;
+    height: 300px;
+    background: linear-gradient(145.9deg, rgba(110, 49, 236, 0.2), rgba(45, 7, 109, 0.83));
+    backdrop-filter: blur(7.5px);
+    border-radius: 8px;
+
+    position: relative;
+    top: -320px;
+    left: -10px;
+}
+
+main .quadrado2 img {
+    display: flex;
+    padding: 25px 60px 5px 70px;
+}
+
+main .quadrado2 h3 {
+    font-family: Titiliumweb-black;
+    font-size: 18px;
+    font-weight: 900px;
+    text-transform: uppercase;
+    text-shadow: 0 0 6px #C6A5E6;
+
+    padding: 0 5px 0 45px;
+}
+
+main .quadrado2 p {
+    font-family: Quicksand;
+    font-size: 13px;
+    font-weight: 400px;
+    text-align: justify;
+    padding: 15px 35px 0 35px;
+}
+
+/************ NOTÍCIA **************/
+
+main .noticia-background {
+    width: 375px;
+    height: 3675px;
+    background: linear-gradient(119.63deg, rgba(45, 24, 77, 0) 0%, rgba(27, 20, 38, 0.55) 99.45%);
+    backdrop-filter: blur(4px);
+    background-image: url(../Home/assets/images/imagem\ fundo\ notícias.svg);
+}
+
+main .titulo h4 {
+    font-family: Titiliumweb-black;
+    font-size: 18px;
+    text-transform: uppercase;
+
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+main .titulo hr {
+    width: 53%;
+    height: 2px;
+    background-color: #F9AA01;
+    border-width: 0;
+    margin-left: 80px;
+    margin-top: 50px;
+}
+
+
+
+/********* NOTICIAS ARTICLES **********/
+
+main .noticia-box article {
+    height: 387px;
+    width: 335px;
+    background: linear-gradient(141.58deg, rgba(37, 26, 52, 0.34) 0%, rgba(5, 1, 12, 0.79) 98.48%);
+    backdrop-filter: blur(3px);
+    border-radius: 8px;
+
+    margin-bottom: 30px;
+}
+
+
+
+main .noticia-box img {
+    border-radius: 8px;
+}
+
+main .noticia-box h5 {
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 700;
+
+    display: flex;
+    margin-left: 20px;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+main .noticia-box p {
+    text-align: justify;
+    padding: 20px 20px 20px 20px;
+    font-family: Quicksand;
+    font-weight: 400px;
+}
+
+main .noticia-box {
+    height: 387px;
+    width: 335px;
+    background: linear-gradient(141.58deg, rgba(37, 26, 52, 0.34) 0%, rgba(5, 1, 12, 0.79) 98.48%);
+    backdrop-filter: blur(3px);
+    border-radius: 8px;
+
+    position: absolute;
+    left: 18px;
+    top: 230px;
+}
