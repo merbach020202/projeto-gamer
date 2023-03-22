@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="login.css">
+    <title>Projeto Gamer Manhã</title>
+    <link rel="stylesheet" href="cadastro-de-equipes.css/cadastro-equipes.css">
 </head>
 
 <body>
@@ -102,152 +102,46 @@
     </header>
 
     <main>
-        <div class="background-login">
-            <img src="assets/images/Banner_Login.svg" alt="Imagem banner login">
 
-            <div class="box-login">
-                <h1>login</h1>
-                
-                <form action="" class="login">
-                    
+        <div class="cadastro-background">
+            <img src="assets/images/Banner_cadastro_de_Equipe.svg" alt="imagem de fundo na secao cadstro de equipes">
+
+            <div class="cadastro-box">
+                <h1>cadastro de equipes</h1>
+                <hr>
+
+                <form action="login">
                     <div class="linha">
-                        <img src="assets/images/usuario-login.svg" alt="Icone usuario">
+                        <img src="assets/images/usuario-login.svg" alt="icone de usuario">
                         <input type="Email" placeholder="Digite seu e-mail">
                     </div>
-                    
-                    <div class="linha">
-                        <img src="assets/images/chave-login.svg" alt="Icone usuario">
-                        <input type="Senha" placeholder="Digite sua senha">
-                    </div>
-                
-                </form>
-                
-                <form action="" class="button">
-                    <button>Logar</button>
                 </form>
             </div>
 
         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!------------ SCRIPT ------------>
+        <script>
+            function mostrarMenu() {
+                document.getElementById("menu").classList.toggle("mostrar-menu");
+            }
+            function mostrarUsuarios() {
+                document.getElementById("menu-usuarios").classList.toggle("mostrar-usuarios");
+            }
+        </script>
     </main>
-
-    <script>
-        function mostrarMenu() {
-            document.getElementById("menu").classList.toggle("mostrar-menu");
-        }
-        function mostrarUsuarios() {
-            document.getElementById("menu-usuarios").classList.toggle("mostrar-usuarios");
-        }
-    </script>
-
-</body>
-
-<footer>
-    <div class="layout-grid footer-top">
-        
-        <div id="sobre">
-            <img src="./assets/images/logotipo-gamer.svg" alt="Logotipo, imagem com texto gamer e um controle de vídeo game ao centro">
-            
-            <p>Nosso sucesso na criação de soluções de negócios se deve em grande parte à nossa equipe talentosa e altamente comprometida.</p>
-
-            <!-- exportar as imagens do figma! -->
-            <div id="midias-sociais-footer">
-                <a href="">
-                    <img src="./assets/Icons/icone_facebook_footer.svg" alt="Ícone do Facebook">
-                </a>
-                <a href="">
-                    <img src="./assets/Icons/icone_linkedin_footer.svg" alt="Ícone do Linkedin">
-                </a>
-                <a href="">
-                    <img src="./assets/Icons/icone_intagram_footer.svg" alt="Ícone do Instagram">
-                </a>
-            </div>
-        </div>
-
-        <div id="links-uteis">
-            <div class="titulos-footer">
-                <h3>Links Úteis</h3>
-                <hr>
-            </div>
-
-            <ul class="menu-footer">
-                <li>
-                    <a href="">Início</a>
-                </li>
-                <li>
-                    <a href="">Jogadores</a>
-                </li>
-                <li>
-                    <a href="">Notícias</a>
-                </li>
-                <li>
-                    <a href="">Login</a>
-                </li>
-                <li>
-                    <a href="">Equipes</a>
-                </li>
-            </ul>
-        </div>
-
-
-        <div id="contatos">
-            <div class="titulos-footer">
-                <h3>Contatos</h3>
-                <hr>
-            </div>
-
-            <p>
-                <span class="contatos-titulo">Localização:</span>
-                Rua Niterói, 180 - São Caetano do Sul- SP
-            </p>
-
-            <p>
-                <span class="contatos-titulo">Junte-se a nós:</span>
-                contato@gamer.com.br
-            </p>
-
-            <p>
-                <span class="contatos-titulo">Telefone:</span>
-                (11) 0900-1010
-            </p>
-        </div>
-
-
-
-        <div id="newsletter">
-            <div class="titulos-footer">
-                <h3>Newsletter</h3>
-                <hr>
-            </div>
-
-            <form action="" class="frm-news">
-                <input type="email" placeholder="Digite seu e-mail">
-                <button>Enviar</button>
-            </form>
-        </div>
-        
-    </div> <!-- fim da footer-top -->
-    
-
-    <div class="layout-grid footer-bottom">
-        <p id="rights">©Copyright2022-GamerJogosDigitais</p>
-        <img src="./assets/Icons/Botao_voltar_ao_topo.svg" alt="Ícone com a seta para cima, clique para voltar ao topo">
-    </div>
-
-</footer>
-
-
-
-
-<script>
-    function mostrarMenu() {
-        document.getElementById("menu").classList.toggle("mostrar-menu");
-    }
-    function mostrarUsuarios() {
-        document.getElementById("menu-usuarios").classList.toggle("mostrar-usuarios");
-    }
-</script>
-</body>
-
-</html>
-
-</html>
