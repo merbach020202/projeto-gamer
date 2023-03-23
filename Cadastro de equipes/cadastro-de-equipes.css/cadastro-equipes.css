@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: TitilliumWeb-Bold;
-    src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Bold.ttf);
+    src: url(../assets/fonts/TitiliumWeb/TitilliumWeb-Bold.ttf);
 }
 
 @font-face {
@@ -170,11 +170,15 @@ header .header-bottom .menu-usuarios {
 
 /******************************* MAIN ********************************/
 
+/********** CAIXA COM FUNDO ************/
 .cadastro-box {
     width: 335px;
     height: 500px;
-    background: linear-gradient( to right bottom, rgba(27, 20, 38, 0.6), rgba(60, 3, 65, 0.4));
+    border: 1px solid transparent;
+    background: linear-gradient(to right bottom, rgba(27, 20, 38, 0.6), rgba(60, 3, 65, 0.3)) padding-box,
+        linear-gradient(to right bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, .1)) border-box;
     backdrop-filter: blur(5px);
+    border-radius: 8px;
 
     position: absolute;
 
@@ -189,30 +193,95 @@ header .header-bottom .menu-usuarios {
 
     margin-top: 30px;
     margin-left: 22px;
+
 }
+
+
 
 .cadastro-box hr {
     width: 250px;
-    height: 2px;
-    border-width: 2px;
+    height: 2.5px;
     margin-left: 40px;
     background-color: #F9AA01;
     color: #F9AA01;
     border-width: 0;
+    margin-top: 8px;
+    margin-bottom: 50px;
 }
 
-main .linha {
-    margin-top: 90px;
-    margin-left: 50px;
+/*********** INPUT ***********/
+main .linha {}
+
+.linha input {
+    height: 40px;
+    width: 273px;
+    position: relative;
+    margin-top: 30px;
+    margin-left: 30px;
+
+    border-radius: 8px;
+    border: 1px solid white;
+    background: linear-gradient(to right, rgba(239, 239, 239, 0.6), rgba(239, 239, 239, 0.1)) padding-box,
+        linear-gradient(to right bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.1)) border-box;
+    backdrop-filter: blur(6px);
 }
 
-main .linha > input {
-    height: 42px;
-    width: 270px;
-}
-
-main .linha > ::placeholder {
+main .linha> ::placeholder {
     font-family: TitiliumWeb-Regular;
     font-size: 16px;
+    color: white;
+
+    padding-left: 10px;
 }
 
+.linha button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 20px;
+    margin-left: 30px;
+
+    height: 40px;
+    width: 120px;
+
+    border-radius: 8px;
+    border: none;
+
+    background-color: rgba(217, 217, 217, 1);
+
+    font-family: TitilliumWeb-Bold;
+
+    font-size: 13px;
+}
+
+.linha button:last-of-type {
+    margin-top: 40px;
+
+    width: 270px;
+
+    font-family: TitilliumWeb-Bold;
+    font-size: 24px;
+
+    background-color: #F9AA01;
+
+}
+
+.linha button:first-of-type::after {
+    content: "Nenhuma imagem selecionada...";
+    position: absolute;
+
+    display: flex;
+    margin-left: 335px;
+
+    width: 200px;
+
+    font-family: TitiliumWeb-Regular;
+    font-size: 10px;
+    color: white;
+}
+
+
+/*************** TABLE ***************/
+table {}
