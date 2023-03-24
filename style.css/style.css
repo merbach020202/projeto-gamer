@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: TitilliumWeb-Bold;
-    src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Bold.ttf);
+    src: url(../assets/fonts/TitiliumWeb/TitilliumWeb-Bold.ttf);
 }
 
 @font-face {
@@ -187,7 +187,7 @@ main {
     align-items: center;
 
     background-color: rebeccapurple;
-    background-image: url(../Home/assets/images/Imagem-banner-mobile.svg);
+    background-image: url(../assets/images/Imagem-banner-mobile.svg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -234,7 +234,7 @@ footer {
     padding-top: 60px;
     padding-bottom: 30px;
     box-shadow: inset 0 30px 60px rgba(0, 0, 0, 1);
-    background-image: url(../Home/assets/images/backgroung_footer.svg);
+    background-image: url(../assets/images/backgroung_footer.svg);
     background-position: top;
     background-size: contain;
 }
@@ -502,7 +502,7 @@ footer .footer-bottom img {
     main .banner {
         height: 722px;
         /* alterar a imagem de fundo */
-        background-image: url(../Home/assets/images/Imagem-banner-desktop.svg);
+        background-image: url(../assets/images/Imagem-banner-desktop.svg);
         background-size: cover;
         background-position: top;
 
@@ -653,11 +653,11 @@ main .noticia-background {
     height: 3675px;
     background: linear-gradient(119.63deg, rgba(45, 24, 77, 0) 0%, rgba(27, 20, 38, 0.55) 99.45%);
     backdrop-filter: blur(4px);
-    background-image: url(../Home/assets/images/imagem\ fundo\ notícias.svg);
+    background-image: url(../assets/images/imagem\ fundo\ notícias.svg);
 }
 
 main .titulo h4 {
-    font-family: Titiliumweb-black;
+    font-family: TitilliumWeb-Black;
     font-size: 18px;
     text-transform: uppercase;
 
