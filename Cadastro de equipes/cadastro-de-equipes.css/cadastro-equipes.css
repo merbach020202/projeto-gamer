@@ -169,12 +169,23 @@ header .header-bottom .menu-usuarios {
 }
 
 /******************************* MAIN ********************************/
+.cadastro-background::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    height: 1230px;
+    width: 100%;
+    backdrop-filter: blur(2px);
 
+    z-index: 0;
+}
 /********** CAIXA COM FUNDO ************/
 .cadastro-box {
     width: 335px;
     height: 500px;
-    border: 1px solid transparent;
+    border: 1px solid white;
     background: linear-gradient(to right bottom, rgba(27, 20, 38, 0.6), rgba(60, 3, 65, 0.3)) padding-box,
         linear-gradient(to right bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, .1)) border-box;
     backdrop-filter: blur(5px);
@@ -182,7 +193,7 @@ header .header-bottom .menu-usuarios {
 
     position: absolute;
 
-    margin-top: -1150px;
+    margin-top: -1160px;
     margin-left: 20px;
 }
 
@@ -284,4 +295,56 @@ main .linha> ::placeholder {
 
 
 /*************** TABLE ***************/
-table {}
+
+/* main .identificacao {
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    
+    margin-top: -580px;
+    margin-left: -35px;
+    color: #F9AA01;
+
+    width: 100%;
+}
+
+main .identificacao h1 {
+    font-family: TitilliumWeb-Black;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+main .identificacao h2 {
+    font-family: TitilliumWeb-Black;
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-left: -30px;
+}
+main .identificacao h3 {
+    font-family: TitilliumWeb-Black;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-right: -20px;
+}
+
+ .hr {
+    display: flex;
+    flex-direction: row;
+    
+    height: 2px;
+    color: #F9AA01;
+} */
+/********* TUDO AQUI EM CIMA ERA O TITULO DA TABELA SEPARADO **********/
+
+table {
+    position: absolute;
+    top: 730px;
+    left: 20px;
+    
+    width: 335px;
+    height: 350px;
+    
+    border: 1px solid white;
+    background: linear-gradient(to right bottom, rgba(27, 20, 38, 0.6), rgba(60, 3, 65, 0.38));
+    backdrop-filter: blur(5px);
+    border-radius: 8px;
+}
