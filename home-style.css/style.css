@@ -452,7 +452,7 @@ main .quadrado1 img {
 }
 
 main .quadrado1 h3 {
-    font-family: Titiliumweb-black;
+    font-family: TitilliumWeb-Black;
     font-size: 18px;
     font-weight: 900px;
     text-transform: uppercase;
@@ -493,7 +493,7 @@ main .quadrado2 img {
 }
 
 main .quadrado2 h3 {
-    font-family: Titiliumweb-black;
+    font-family: TitilliumWeb-Black;
     font-size: 18px;
     font-weight: 900px;
     text-transform: uppercase;
@@ -584,9 +584,9 @@ main .noticia-box {
     backdrop-filter: blur(3px);
     border-radius: 8px;
 
-    position: absolute;
+    position: relative;
     left: 18px;
-    top: 230px;
+    top: 90px;
 }
 
 /**************** RESPONSIVIDADE *****************/
@@ -726,7 +726,7 @@ main .noticia-box {
     /******** ENTRE PARA O TIME PROGRAMER *******/
     main .time-programer {
         width: 100%;
-        height: 1000px;
+        height: 900px;
 
         display: flex;
         justify-content: space-evenly;
@@ -743,10 +743,114 @@ main .noticia-box {
         letter-spacing: 5px;
         
         margin-top: 0px;
-        margin-left: 170px;
+        margin-left: 100px;
     }
 
     main .time-programer hr {
-        
+        margin-left: 400px;
     }
+
+    /********** ARTICLES **********/
+    /* KILJOY 1 */
+    main .jogos-diferentes {
+        position: absolute;
+        top: 1500px;
+        left: 100px;
+    }
+    
+    main .jogos-diferentes > img {
+        width: 500px;
+        height: 600px;
+    }
+
+    main .jogos-diferentes .quadrado1 {
+        width: 300px;
+        height: 380px;
+        border: 1px solid white;
+        
+        position: absolute;
+        top: 550px;
+        left: 250px;
+    }
+
+    main .jogos-diferentes .quadrado1 img {
+        height: 190px;
+        width: 120px;
+        
+        padding: 1px;
+        margin-left: 90px;
+    }
+
+    main .jogos-diferentes .quadrado1 h3 {
+        font-size: 24px;
+        
+        padding-left: 15px;
+        padding-bottom: 20px;
+    }
+
+    /* KILJOY 2 */    
+    main .professores {
+        position: absolute;
+        top: 1450px;
+        right: 100px;
+    }
+    
+    main .professores > img {
+        width: 420px;
+        height: 600px;
+    }
+
+    main .professores .quadrado2 {
+        width: 300px;
+        height: 380px;
+        border: 1px solid white;
+        
+        position: absolute;
+        top: 175px;
+        left: -90px;
+    }
+
+    main .professores .quadrado2 img {
+        height: 190px;
+        width: 120px;
+        
+        padding: 1px;
+        margin-left: 90px;
+    }
+
+    main .professores .quadrado2 h3 {
+        font-size: 24px;
+        
+        padding-left: 15px;
+        padding-bottom: 20px;
+    }
+
+    /**************** NOTÍCIAS ****************/
+
+    main .noticia-background {
+        width: 1300px;
+        height: 1800px;
+        background-image: url(../assets/images/backgrund_notícias.svg);
+        background-repeat: no-repeat;
+    }
+
+    main .noticia-background .titulo h4 {
+        font-size: 40px;
+    }
+    
+    main .noticia-background .titulo hr {
+        width: 190px;
+        margin-left: 555px;
+        margin-top: 20px;
+    }
+
+    main .noticia-background .noticia-box {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        }
+
+        main .noticia-background .noticia-box > article {
+            width: 300px;
+        }
 }
