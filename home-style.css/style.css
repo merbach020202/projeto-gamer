@@ -522,7 +522,7 @@ main .noticia-background {
     padding: 0;
 }
 
-main .titulo h4 {
+main h4 {
     font-family: TitilliumWeb-Black;
     font-size: 18px;
     text-transform: uppercase;
@@ -532,7 +532,7 @@ main .titulo h4 {
     padding-top: 50px;
 }
 
-main .titulo hr {
+main hr {
     width: 53%;
     height: 2px;
     background-color: #F9AA01;
@@ -737,13 +737,13 @@ main .noticia-box {
     main .time-programer h1 {
         display: flex;
         justify-content: center;
-        
+
         width: 100%;
-        
-        
+
+
         font-size: 40px;
         letter-spacing: 5px;
-        
+
         margin-top: 0px;
         margin-left: 100px;
     }
@@ -759,8 +759,8 @@ main .noticia-box {
         top: 1500px;
         left: 100px;
     }
-    
-    main .jogos-diferentes > img {
+
+    main .jogos-diferentes>img {
         width: 500px;
         height: 600px;
     }
@@ -769,7 +769,7 @@ main .noticia-box {
         width: 300px;
         height: 380px;
         border: 1px solid white;
-        
+
         position: absolute;
         top: 550px;
         left: 250px;
@@ -778,26 +778,26 @@ main .noticia-box {
     main .jogos-diferentes .quadrado1 img {
         height: 190px;
         width: 120px;
-        
+
         padding: 1px;
         margin-left: 90px;
     }
 
     main .jogos-diferentes .quadrado1 h3 {
         font-size: 24px;
-        
+
         padding-left: 15px;
         padding-bottom: 20px;
     }
 
-    /* KILJOY 2 */    
+    /* KILJOY 2 */
     main .professores {
         position: absolute;
         top: 1450px;
         right: 100px;
     }
-    
-    main .professores > img {
+
+    main .professores>img {
         width: 420px;
         height: 600px;
     }
@@ -806,7 +806,7 @@ main .noticia-box {
         width: 300px;
         height: 380px;
         border: 1px solid white;
-        
+
         position: absolute;
         top: 175px;
         left: -90px;
@@ -815,14 +815,14 @@ main .noticia-box {
     main .professores .quadrado2 img {
         height: 190px;
         width: 120px;
-        
+
         padding: 1px;
         margin-left: 90px;
     }
 
     main .professores .quadrado2 h3 {
         font-size: 24px;
-        
+
         padding-left: 15px;
         padding-bottom: 20px;
     }
@@ -831,55 +831,123 @@ main .noticia-box {
 
     main .noticia-background {
         width: 1300px;
-        height: 1800px;
+        height: 1175px;
         background-image: url(../assets/images/backgrund_notícias.svg);
         background-repeat: no-repeat;
     }
 
-    main .noticia-background .titulo h4 {
+    main .noticia-background h4 {
         font-size: 40px;
     }
-    
-    main .noticia-background .titulo hr {
+
+    main .noticia-background hr {
         width: 190px;
         margin-left: 555px;
         margin-top: 20px;
     }
 
-    main .noticia-background .noticia-box {
+    /************ ARTICLES ************/
+
+    main .noticia-box {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        align-items: center;
+
         position: absolute;
-        width: 220px;
-        height: 340px;
-        margin-top: 100px;
-        }
+        margin-left: 10px;
 
-        main .noticia-background .noticia-box p {
-            font-size: 14px;
-        }
+        width: 2000px;
+        height: 200px;
 
-        main .noticia-background .noticia-box h5 {
-            font-size: 22px;
-        }
+        gap: 30px;
 
-        main .noticia-background .noticia-box img {
-            width: 220px;
-            height: 134px;
-        }
+        padding-right: 500px;
+    }
 
-        main .noticia-box .article {
-            width: 20px;
-        }
+    main .noticia-background .noticia-box p {
+        font-size: 14px;
+    }
 
-        main .noticia-background .noticia-box:last-of-type {
-            margin-top: 300px;
-        }
+    main .noticia-box h5 {
+        font-size: 22px;
+    }
 
-        main .noticia-background .noticia-box > article {
-            width: 300px;
-        }
+    main .noticia-box article>img {
+        margin-top: -30px;
+        height: 200px;
+        width: 280px;
+        padding: 0;
+    }
+
+    main .noticia-box:last-of-type {
+        margin-top: 320px;
+    }
+
+    main .noticia-box>article {
+        width: 280px;
+    }
+
+
+
+    /******************** FOOTER *******************/
+
+
+    /*************** FOOTER-TOP **************/
+
+    /************* SOBRE ************/
+    footer {
+        background-image: url(../assets/images/backgroung_footer_desktop.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    footer .footer-top #sobre>img {
+        width: 200px;
+        height: 56px;
+    }
+
+    footer .footer-top #sobre p {
+        width: 250px;
+        text-align: justify;
+    }
+
+    footer .footer-top #midias-sociais-footer {
+        width: 240px;
+    }
+
+    footer .footer-top #sobre {
+        display: flex;
+        align-items: start;
+
+        margin-left: 50px;
+    }
+
+
+    /********** LINKS UTEIS **********/
+
+    footer .footer-top #links-uteis{
+        position: absolute;
+        margin-left: 400px;
+        margin-left: 360px;
+    }
+
+    footer .footer-top #links-uteis p{
+        font-size: 16px;
+    }
+
+    footer .footer-top #links-uteis .menu-footer{
+        display: flex;
+        flex-direction: column;
+        
+        margin-top: 60px;
+        
+        gap: 5px;
+    }
+
+    /************* CONTATOS ************/
+
+    footer .footer-top #contatos{
+        
+    }
+
 }
-
-
