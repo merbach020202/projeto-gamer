@@ -890,16 +890,18 @@ main .noticia-box {
 
 
     /******************** FOOTER *******************/
-
-
-    /*************** FOOTER-TOP **************/
-
-    /************* SOBRE ************/
     footer {
         background-image: url(../assets/images/backgroung_footer_desktop.svg);
         background-repeat: no-repeat;
         background-size: cover;
+
+        height: 540px;
     }
+
+    /*************** FOOTER-TOP **************/
+
+    /************* SOBRE ************/
+
 
     footer .footer-top #sobre>img {
         width: 200px;
@@ -925,29 +927,108 @@ main .noticia-box {
 
     /********** LINKS UTEIS **********/
 
-    footer .footer-top #links-uteis{
+    footer .footer-top #links-uteis {
         position: absolute;
-        margin-left: 400px;
         margin-left: 360px;
     }
 
-    footer .footer-top #links-uteis p{
+    footer .footer-top #links-uteis a {
+        font-weight: bold;
         font-size: 16px;
+        font-family: Inter;
     }
 
-    footer .footer-top #links-uteis .menu-footer{
+    footer .footer-top #links-uteis h3 {
+        font-family: TitilliumWeb-Bold;
+        font-size: 32px;
+    }
+
+    footer .footer-top #links-uteis .menu-footer {
         display: flex;
         flex-direction: column;
-        
-        margin-top: 60px;
-        
+
+        margin-top: 50px;
+
         gap: 5px;
     }
 
     /************* CONTATOS ************/
 
-    footer .footer-top #contatos{
-        
+    footer .footer-top #contatos {
+        position: absolute;
+        margin-left: 580px;
     }
+
+    footer .footer-top #contatos .titulos-footer h3 {
+        font-family: TitilliumWeb-Bold;
+        font-size: 32px;
+    }
+
+    footer .footer-top #contatos p {
+        font-family: TitilliumWeb-Bold;
+
+        gap: 5px;
+    }
+
+    footer .footer-top #contatos .titulos-footer {
+        margin-bottom: 45px;
+    }
+
+    /************* NEWSLETTER *************/
+
+    footer .footer-top #newsletter {
+        position: absolute;
+        margin-left: 900px;
+    }
+
+    footer .footer-top #newsletter h3 {
+        font-family: TitiliumWeb-Regular;
+        font-size: 32px;
+    }
+
+    footer .footer-top #newsletter .titulos-footer {
+        margin-bottom: 30px;
+    }
+
+    footer .footer-top #newsletter .frm-news {
+        width: 250px;
+    }
+
+    footer .footer-top #newsletter .frm-news>input {
+        background: linear-gradient(to right, rgba(239, 239, 239, 0.7), rgba(239, 239, 239, 0.2));
+    }
+
+    footer .footer-top #newsletter .frm-news>button {
+        font-family: TitilliumWeb-Bold;
+        font-size: 24px;
+
+        border: none;
+    }
+
+    /*************** FOOTER-BOTTOM **************/
+    footer .footer-bottom{
+        position: absolute;
+        margin-top: -1200px;
+    }
+
+    footer .footer-bottom p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-left: 450px;
+        margin-top: 20px;
+    }
+
+    footer .footer-bottom > img{
+        position: absolute;
+        
+        margin-left: 900px;
+        margin-top: 50px;
+    }
+
+
+
+
 
 }
