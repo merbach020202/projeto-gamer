@@ -901,6 +901,9 @@ main .noticia-box {
     /*************** FOOTER-TOP **************/
 
     /************* SOBRE ************/
+    footer .footer-top{
+        height: 0;
+    }
 
 
     footer .footer-top #sobre>img {
@@ -922,6 +925,7 @@ main .noticia-box {
         align-items: start;
 
         margin-left: 50px;
+        gap: 25px;
     }
 
 
@@ -1006,9 +1010,14 @@ main .noticia-box {
     }
 
     /*************** FOOTER-BOTTOM **************/
-    footer .footer-bottom{
-        position: absolute;
-        margin-top: -1200px;
+    footer .footer-bottom {
+        display: flex;
+
+        margin-top: 340px;
+        margin-right: 70px;
+
+        height: 10px;
+        
     }
 
     footer .footer-bottom p{
