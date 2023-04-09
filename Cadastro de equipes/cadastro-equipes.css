@@ -348,3 +348,17 @@ table {
     backdrop-filter: blur(5px);
     border-radius: 8px;
 }
+
+table thead tr th{
+    font-family: TitilliumWeb-Black;
+    font-size: 20px;
+    color: #F9AA01;
+    text-transform: uppercase;
+
+    display: flex;
+    margin-left: 20px;
+    flex-direction: row;
+
+    flex-wrap: wrap;
+}
+
